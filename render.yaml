@@ -1,0 +1,32 @@
+# Render Blueprint: New + > Blueprint, pick this repository.
+# The database is NOT created here on purpose: Render's free PostgreSQL expires after 30 days.
+# Use a free external PostgreSQL that does not expire (Neon, Supabase...) and fill the DB_* values below.
+services:
+  - type: web
+    name: portfolio-api
+    runtime: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /actuator/health/liveness
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: "5432"
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_PARAMS            # Neon and most hosted databases need: ?sslmode=require
+        value: "?sslmode=require"
+      - key: CORS_ALLOWED_ORIGINS  # your GitHub Pages origin, e.g. https://tu-usuario.github.io
+        sync: false
+      - key: RESEND_API_KEY        # optional: email me when someone writes
+        sync: false
+      - key: NOTIFY_TO_EMAIL       # optional: must be the email of your Resend account
+        sync: false
+      - key: TRUSTED_PROXY_HOPS
+        value: "1"
