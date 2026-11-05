@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es-CO" data-page="proyectos">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Proyectos · Juan Pablo Correa</title>
+  <meta name="description" content="CortexCam (videovigilancia con IA, en refactorización a microservicios), este portafolio con API Spring Boot y otros proyectos académicos.">
+  <meta name="author" content="Juan Pablo Correa">
+  <meta name="theme-color" content="#05060f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https: http://localhost:8080 http://127.0.0.1:8080; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
+  <link rel="canonical" href="__SITE_URL__/proyectos.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Juan Pablo Correa">
+  <meta property="og:title" content="Proyectos · Juan Pablo Correa">
+  <meta property="og:description" content="CortexCam (videovigilancia con IA, en refactorización a microservicios), este portafolio con API Spring Boot y otros proyectos académicos.">
+  <meta property="og:url" content="__SITE_URL__/proyectos.html">
+  <meta property="og:image" content="__SITE_URL__/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/display-200.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script src="js/boot.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <canvas id="galaxy" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="site">
+    <header class="header">
+      <div class="wrap header__bar">
+        <a class="brand" href="index.html" aria-label="Juan Pablo Correa, ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Juan Pablo <span>Correa</span></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="formacion.html">Formación</a>
+          <a href="experiencia.html">Experiencia</a>
+          <a href="proyectos.html" aria-current="page">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <header class="wrap page-head">
+        <span class="kicker">Proyectos</span>
+        <h1 class="display">Lo que he construido y <span class="acc">lo que estoy construyendo</span></h1>
+        <p class="lead">Proyectos académicos y personales. Escribe una palabra (por ejemplo Java, Docker o IA) para filtrarlos.</p>
+      </header>
+
+      <section class="wrap" aria-label="Buscar proyectos">
+        <form class="search" role="search" method="get" action="proyectos.html">
+          <div class="field">
+            <label for="q">Buscar proyecto</label>
+            <input type="search" id="q" name="q" placeholder="Java, Docker, IA…" autocomplete="off">
+          </div>
+          <button class="btn" type="submit">Buscar</button>
+        </form>
+      </section>
+
+      <section class="section" data-shape="espiral" aria-label="Lista de proyectos">
+        <div class="wrap">
+          <div class="grid grid--cards">
+
+            <article class="panel panel--glow project project--featured reveal" data-project data-tags="java spring boot api rest postgresql hexagonal swagger openapi postman microservicios practica activos datacenter pdf qr scrum">
+              <div class="project__top">
+                <h3>Trazabilidad de <strong>activos físicos</strong></h3>
+                <span class="badge badge--wip">Práctica · 4 ago – 17 dic 2026</span>
+              </div>
+              <p>Backend del módulo de activos físicos de un sistema web de gestión y trazabilidad, desarrollado para reemplazar los formatos en papel por registros en tiempo real.</p>
+              <div class="grid grid--2">
+                <div>
+                  <h4>Qué hace</h4>
+                  <ul class="points">
+                    <li>Registra, asigna, transfiere, presta y da seguimiento a cada activo.</li>
+                    <li>Genera actas en PDF y notifica por correo.</li>
+                    <li>Mantiene el historial completo de cada activo y códigos QR y de barras.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>Cómo está hecho</h4>
+                  <ul class="points">
+                    <li>112 endpoints REST en 24 controladores, sobre 17 tablas.</li>
+                    <li>Spring Boot, arquitectura hexagonal y PostgreSQL.</li>
+                    <li>Permisos por submódulo, datos aislados por empresa, errores centralizados y OpenAPI / Swagger.</li>
+                  </ul>
+                </div>
+              </div>
+              <p><a href="experiencia.html#practica">Ver el detalle de la práctica →</a></p>
+              <ul class="chips"><li class="is-main">Java</li><li class="is-main">Spring Boot</li><li>REST</li><li>PostgreSQL</li><li>Hexagonal</li><li>Microservicios</li><li>Swagger / OpenAPI</li><li>Postman</li><li>Scrum</li></ul>
+            </article>
+
+            <article class="panel panel--glow project project--featured reveal" data-project data-tags="java python ia inteligencia artificial microservicios hexagonal ddd docker postgresql postman github videovigilancia">
+              <div class="project__top">
+                <h3>Cortex<strong>Cam</strong></h3>
+                <span class="badge badge--wip">En refactorización (v2)</span>
+              </div>
+              <p>Videovigilancia con inteligencia artificial: detecta personas y armas de fuego en tiempo real sobre las cámaras que ya existen y envía alertas, para prevenir en lugar de solo grabar.</p>
+              <div class="grid grid--2">
+                <div>
+                  <h4>v1 · 2.º semestre</h4>
+                  <ul class="points">
+                    <li>Hecho con Python, Java, HTML5, CSS y JavaScript.</li>
+                    <li>Entrenamiento del modelo de IA con imágenes etiquetadas.</li>
+                    <li>Panel con detecciones, cámara en vivo, actualizaciones y activación de la IA.</li>
+                    <li>Guarda la captura en el instante de cada detección para revisar falsos positivos.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>v2 · 4.º semestre (en curso)</h4>
+                  <ul class="points">
+                    <li>Refactorización a arquitectura hexagonal con DDD.</li>
+                    <li>Microservicios, con más modelos de IA.</li>
+                    <li>Docker, PostgreSQL, Postman y GitHub.</li>
+                    <li>Documentación de las APIs con Swagger.</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Además, con mi equipo preparamos el documento de emprendimiento (nov. 2025): estudio de mercado, estrategia de ventas y pitch.</p>
+              <ul class="chips"><li class="is-main">Java</li><li>Python</li><li>IA</li><li>Microservicios</li><li>Hexagonal</li><li>DDD</li><li>Docker</li><li>PostgreSQL</li><li>Postman</li><li>GitHub</li><li>HTML5</li><li>CSS</li><li>JavaScript</li></ul>
+            </article>
+
+            <article class="panel project reveal" data-project data-tags="java spring boot api rest postgresql flyway docker hexagonal ddd clean architecture archunit tests swagger canvas portafolio">
+              <div class="project__top">
+                <h3>Este portafolio</h3>
+                <span class="badge badge--done">Versión 1.0</span>
+              </div>
+              <p>Sitio sin plantillas ni frameworks, con una galaxia interactiva en canvas y una API real detrás del formulario de contacto.</p>
+              <ul class="points">
+                <li>API en Java 21 y Spring Boot con arquitectura hexagonal, DDD y Clean Architecture.</li>
+                <li>PostgreSQL con migraciones, Swagger y <code>docker compose</code>.</li>
+                <li>Pruebas unitarias, del contrato HTTP y de arquitectura (ArchUnit).</li>
+              </ul>
+              <div class="project__links">
+                <a class="is-hidden" href="#" data-config-href="githubRepoUrl" rel="noopener noreferrer" target="_blank">Ver código</a>
+                <a class="is-hidden" href="#" data-config-href="apiBaseUrl" data-config-suffix="/swagger-ui.html" rel="noopener noreferrer" target="_blank">Ver API (Swagger)</a>
+              </div>
+              <ul class="chips"><li class="is-main">Java</li><li class="is-main">Spring Boot</li><li>PostgreSQL</li><li>Docker</li><li>Hexagonal</li><li>DDD</li><li>JavaScript</li><li>CSS</li></ul>
+            </article>
+
+            <article class="panel project reveal" data-delay="1" data-project data-tags="html css javascript formularios tablas responsive accesibilidad hoja de vida web">
+              <div class="project__top">
+                <h3>Hoja de vida web</h3>
+                <span class="badge badge--done">Entregado · Actividad 4</span>
+              </div>
+              <p>Sitio multipágina hecho para el curso Introducción a los lenguajes de Internet: HTML5 semántico, formularios con métodos GET y POST, tablas y CSS responsive.</p>
+              <ul class="points">
+                <li>Navegación coherente en varias páginas y accesible con teclado.</li>
+                <li>Formulario de contacto y filtro de proyectos.</li>
+              </ul>
+              <ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Accesibilidad</li></ul>
+            </article>
+
+            <article class="panel project reveal" data-delay="2" data-project data-tags="html css maquetacion responsive ejercicio">
+              <div class="project__top">
+                <h3>Ejercicio de maquetación</h3>
+                <span class="badge badge--done">Actividad 3</span>
+              </div>
+              <p>Reproducción fiel de una página institucional existente, hecha para practicar estructura HTML, CSS y diseño responsive. Es un ejercicio de clase: no está publicado.</p>
+              <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul>
+            </article>
+
+          </div>
+          <div id="noResults" class="panel no-results is-hidden" role="status">No encontré proyectos con esa palabra. Prueba con «Java», «Docker» o «IA».</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__grid">
+        <div>
+          <p><strong>Juan Pablo Correa</strong> · Bogotá, Colombia</p>
+          <p>© <span id="year">2026</span>. Hecho a mano con Java, HTML, CSS y JavaScript, sin plantillas.</p>
+        </div>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a>
+          <a href="formacion.html">Formación</a>
+          <a href="experiencia.html">Experiencia</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="https://www.linkedin.com/in/juan-pablo-c-523a3b2a9/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <div class="dock" role="group" aria-label="Controles de la galaxia">
+    <button class="dock__btn" id="dockColor" type="button" aria-label="Cambiar el color de la galaxia (atajo: C)">
+      <span class="dock__swatch" aria-hidden="true"></span>
+      <span class="dock__label">Color</span>
+      <span class="dock__value">Nebulosa</span>
+    </button>
+    <button class="dock__btn" id="dockShape" type="button" aria-label="Cambiar la forma de la galaxia (atajo: F)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.6v8.8L12 21l-8-4.6V7.6z"/></svg>
+      <span class="dock__label">Forma</span>
+      <span class="dock__value">Auto</span>
+    </button>
+    <button class="dock__btn dock__btn--icon" id="dockMotion" type="button" aria-pressed="false" aria-label="Pausar animación de la galaxia">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    </button>
+  </div>
+  <p class="sr-only" id="galaxyStatus" role="status" aria-live="polite"></p>
+  <div class="hint" id="hint" aria-hidden="true"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/galaxy/palettes.js" defer></script>
+  <script src="js/galaxy/shapes.js" defer></script>
+  <script src="js/galaxy/engine.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

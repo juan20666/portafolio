@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es-CO" data-page="experiencia">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Experiencia · Juan Pablo Correa</title>
+  <meta name="description" content="Práctica profesional en Datacenter Colombia S.A.S.: backend de un sistema de trazabilidad de activos con Spring Boot, arquitectura hexagonal y 112 endpoints REST.">
+  <meta name="author" content="Juan Pablo Correa">
+  <meta name="theme-color" content="#05060f">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https: http://localhost:8080 http://127.0.0.1:8080; base-uri 'self'; form-action 'self' mailto:; object-src 'none'">
+  <link rel="canonical" href="__SITE_URL__/experiencia.html">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Juan Pablo Correa">
+  <meta property="og:title" content="Experiencia · Juan Pablo Correa">
+  <meta property="og:description" content="Práctica profesional en Datacenter Colombia S.A.S.: backend de un sistema de trazabilidad de activos con Spring Boot, arquitectura hexagonal y 112 endpoints REST.">
+  <meta property="og:url" content="__SITE_URL__/experiencia.html">
+  <meta property="og:image" content="__SITE_URL__/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="fonts/display-200.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script src="js/boot.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <canvas id="galaxy" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="site">
+    <header class="header">
+      <div class="wrap header__bar">
+        <a class="brand" href="index.html" aria-label="Juan Pablo Correa, ir al inicio">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Juan Pablo <span>Correa</span></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="nav" id="nav" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="formacion.html">Formación</a>
+          <a href="experiencia.html" aria-current="page">Experiencia</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <header class="wrap page-head">
+        <span class="kicker">Experiencia</span>
+        <h1 class="display">Backend real en una empresa y <span class="acc">liderazgo</span> de equipos</h1>
+        <p class="lead">Desarrollé el backend de un módulo de trazabilidad de activos <br> Desarrolle un sistema de videovigilancia con IA integrada de deteccion de armas y personas.</p>
+      </header>
+
+      <section class="section" id="practica" data-shape="anillo" aria-labelledby="practica-t">
+        <div class="wrap">
+          <div class="section__head reveal">
+            <span class="kicker">Práctica profesional · 4 ago – 17 dic 2026</span>
+            <h2 id="practica-t">Sistema web para la gestión y trazabilidad de activos físicos</h2>
+            <p>Desarrollé el <strong>backend del módulo de activos físicos</strong> (equipos de cómputo, hardware y periféricos). Antes, el control dependía de formatos en papel: la información llegaba tarde, los inventarios quedaban desactualizados y el diligenciamiento manual generaba errores.</p>
+          </div>
+
+          <ul class="metrics reveal">
+            <li><strong>112</strong><span>endpoints REST</span></li>
+            <li><strong>24</strong><span>controladores</span></li>
+            <li><strong>17</strong><span>tablas relacionales</span></li>
+            <li><strong>5</strong><span>fases, del requisito a la entrega</span></li>
+          </ul>
+
+          <div class="grid grid--2">
+            <article class="panel reveal">
+              <h3>Lo que construí</h3>
+              <ul class="points">
+                <li>API REST con <strong>Spring Boot</strong>, arquitectura hexagonal y <strong>PostgreSQL</strong>.</li>
+                <li><strong>Campos dinámicos:</strong> cada subtipo de activo define sus atributos (marca, modelo, serie…) sin cambiar el esquema de la base de datos.</li>
+                <li>Flujos de <strong>asignación, aceptación, transferencia y devolución</strong>, con la regla de que un activo solo puede estar asignado a un colaborador a la vez.</li>
+                <li><strong>Actas en PDF</strong> generadas automáticamente y notificaciones por correo, para avanzar hacia cero papel.</li>
+                <li>Ciclo de vida del activo (inactivar, reactivar, baja definitiva), préstamos entre empresas, relaciones entre activos y registro de novedades con tablero.</li>
+                <li>Código de barras y QR por activo, con servicios de escaneo.</li>
+              </ul>
+            </article>
+            <article class="panel reveal" data-delay="1">
+              <h3>Calidad y buenas prácticas</h3>
+              <ul class="points">
+                <li><strong>Permisos por submódulo</strong> (crear, leer, actualizar, eliminar) y datos aislados por empresa.</li>
+                <li><strong>Errores centralizados</strong> con una respuesta homogénea para todo el módulo.</li>
+                <li><strong>Trazabilidad:</strong> cada solicitud lleva un identificador que viaja entre servicios, y cada activo tiene su historial de eventos.</li>
+                <li>Integración con los servicios de empleados, empresas, documentos y correo de la plataforma.</li>
+                <li>Documentación interactiva con <strong>OpenAPI / Swagger</strong> y pruebas de la API con colecciones.</li>
+                <li>Metodología <strong>Scrum</strong> y trabajo con Docker y Postman.</li>
+              </ul>
+            </article>
+            <article class="panel reveal">
+              <h3>Impacto frente al problema</h3>
+              <ul class="points">
+                <li><strong>Latencia:</strong> los movimientos se registran cuando ocurren; ubicación y responsable están disponibles sin esperar papeles.</li>
+                <li><strong>Inventario desactualizado:</strong> cada operación queda en el historial con fecha, tipo de evento y responsable.</li>
+                <li><strong>Errores humanos:</strong> validaciones de negocio, catálogos configurables y actas automáticas reducen la captura manual.</li>
+              </ul>
+            </article>
+            <article class="panel reveal" data-delay="1">
+              <h3>Lo que aprendí</h3>
+              <ul class="points">
+                <li>Validar el alcance desde el inicio: algunos CRUD secundarios se descartaron para no construir lo que no hacía falta.</li>
+                <li>Escribir pruebas desde el comienzo de cada módulo abarata corregir errores al final.</li>
+                <li>Sin trazabilidad ni registro de eventos, diagnosticar fallas en servicios distribuidos es casi imposible.</li>
+                <li>Siguiente paso: ampliar la cobertura de pruebas automatizadas e integrar con la interfaz de usuario.</li>
+              </ul>
+            </article>
+          </div>
+          <p class="privacy-note mt-m">Mi rol fue el backend; la interfaz de usuario, el módulo de software y licencias y la infraestructura de TI quedaron fuera de mi alcance. Cifras tomadas de mi informe final de práctica (nov. 2026).</p>
+        </div>
+      </section>
+
+      <section class="section" data-shape="helice" aria-labelledby="linea">
+        <div class="wrap">
+          <div class="section__head reveal">
+            <span class="kicker">Recorrido</span>
+            <h2 id="linea">Línea de tiempo</h2>
+          </div>
+          <ol class="timeline reveal">
+            <li class="milestone">
+              <time datetime="2026-08-04">4 ago – 17 dic 2026</time>
+              <h3>Práctica profesional · Backend de activos físicos</h3>
+              <p class="org">Datacenter Colombia S.A.S. · Gerencia de Soluciones</p>
+              <ul>
+                <li>Backend del módulo de activos físicos: 112 endpoints REST, 24 controladores, 17 tablas.</li>
+                <li>Arquitectura hexagonal, Spring Boot y PostgreSQL; documentación con Swagger y pruebas con Postman.</li>
+                <li>Integración con otros servicios de la plataforma y trabajo bajo Scrum.</li>
+              </ul>
+            </li>
+            <li class="milestone">
+              <time datetime="2026">4.º semestre · 2026</time>
+              <h3>CortexCam v2 · Refactorización</h3>
+              <p class="org">Proyecto académico</p>
+              <ul>
+                <li>Paso del proyecto a arquitectura hexagonal con DDD y microservicios, con más modelos de IA.</li>
+                <li>Docker, GitHub, Postman y PostgreSQL en el flujo de trabajo.</li>
+              </ul>
+            </li>
+            <li class="milestone">
+              <time datetime="2025">2.º semestre · 2025</time>
+              <h3>CortexCam v1 · Primer prototipo</h3>
+              <p class="org">Proyecto académico</p>
+              <ul>
+                <li>Software de videovigilancia con IA hecho con Python, Java, HTML5, CSS y JavaScript.</li>
+                <li>Entrenamiento del modelo para reconocer personas y armas en imágenes de cámara.</li>
+              </ul>
+            </li>
+            <li class="milestone">
+              <time datetime="2022">2022 – 2025</time>
+              <h3>Líder de meseros</h3>
+              <p class="org">Banquetes y Alquileres Correa</p>
+              <ul>
+                <li>Coordiné al equipo de meseros para lograr un servicio eficiente y organizado durante los eventos.</li>
+                <li>Gestioné la comunicación entre cocina y personal de servicio para cumplir los tiempos.</li>
+                <li>Mantuve altos estándares de atención al cliente y resolví necesidades inmediatas.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" data-shape="espiral" aria-labelledby="como">
+        <div class="wrap">
+          <div class="section__head reveal">
+            <span class="kicker">Cómo trabajo</span>
+            <h2 id="como">Lo que me llevo de cada experiencia</h2>
+          </div>
+          <div class="grid grid--2">
+            <article class="panel card reveal">
+              <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3L20 4v6h-6l2.2-2.2A5.5 5.5 0 0 0 6.5 12"/><path d="M20 12a8 8 0 0 1-14 5.3L4 20v-6h6l-2.2 2.2A5.5 5.5 0 0 0 17.5 12"/></svg></span>
+              <h3>Trabajo por ciclos</h3>
+              <p>Scrum en la práctica: objetivos claros, entregas pequeñas y revisión constante con el equipo.</p>
+            </article>
+            <article class="panel card reveal" data-delay="1">
+              <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></span>
+              <h3>Código que se lee</h3>
+              <p>Nombres claros, responsabilidades separadas y pruebas. Prefiero lo simple que funciona a lo complicado que impresiona.</p>
+            </article>
+            <article class="panel card reveal" data-delay="2">
+              <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></span>
+              <h3>Comunicación bajo presión</h3>
+              <p>Coordinar eventos en vivo me enseñó a priorizar, a hablar claro y a mantener la calma cuando algo cambia.</p>
+            </article>
+            <article class="panel card reveal">
+              <span class="card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
+              <h3>Orden y datos</h3>
+              <p>Manejo de Excel y Word, registro y análisis de datos, informes y apoyo en procesos administrativos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-shape="java">
+        <div class="wrap">
+          <div class="panel panel--glow cta reveal">
+            <h2>¿Te cuento más de alguno de estos proyectos?</h2>
+            <div class="actions">
+              <a class="btn btn--primary" href="proyectos.html">Ver proyectos</a>
+              <a class="btn" href="contacto.html">Escríbeme</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__grid">
+        <div>
+          <p><strong>Juan Pablo Correa</strong> · Bogotá, Colombia</p>
+          <p>© <span id="year">2026</span>. Hecho a mano con Java, HTML, CSS y JavaScript, sin plantillas.</p>
+        </div>
+        <nav aria-label="Pie de página">
+          <a href="index.html">Inicio</a>
+          <a href="formacion.html">Formación</a>
+          <a href="experiencia.html">Experiencia</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="https://www.linkedin.com/in/juan-pablo-c-523a3b2a9/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <div class="dock" role="group" aria-label="Controles de la galaxia">
+    <button class="dock__btn" id="dockColor" type="button" aria-label="Cambiar el color de la galaxia (atajo: C)">
+      <span class="dock__swatch" aria-hidden="true"></span>
+      <span class="dock__label">Color</span>
+      <span class="dock__value">Nebulosa</span>
+    </button>
+    <button class="dock__btn" id="dockShape" type="button" aria-label="Cambiar la forma de la galaxia (atajo: F)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.6v8.8L12 21l-8-4.6V7.6z"/></svg>
+      <span class="dock__label">Forma</span>
+      <span class="dock__value">Auto</span>
+    </button>
+    <button class="dock__btn dock__btn--icon" id="dockMotion" type="button" aria-pressed="false" aria-label="Pausar animación de la galaxia">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+    </button>
+  </div>
+  <p class="sr-only" id="galaxyStatus" role="status" aria-live="polite"></p>
+  <div class="hint" id="hint" aria-hidden="true"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/galaxy/palettes.js" defer></script>
+  <script src="js/galaxy/shapes.js" defer></script>
+  <script src="js/galaxy/engine.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
