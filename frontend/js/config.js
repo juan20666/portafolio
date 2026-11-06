@@ -5,7 +5,7 @@ window.SITE_CONFIG = Object.freeze({
   // URL pública de tu API en Render/Railway, SIN barra final.
   // Ejemplo: "https://portafolio-api.onrender.com"
   // Mientras esté vacía, el formulario de contacto abre tu aplicación de correo.
-  apiBaseUrl: "",
+  apiBaseUrl: "https://portfolio-api-f48p.onrender.com",
 
   // Opcionales: déjalos vacíos y el sitio oculta el enlace automáticamente.
   githubUrl: "", // Ejemplo: "https://github.com/tu-usuario"
