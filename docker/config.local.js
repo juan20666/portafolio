@@ -4,6 +4,6 @@ window.SITE_CONFIG = Object.freeze({
   githubUrl: "",
   githubRepoUrl: "",
   cvUrl: "",
-  email: "correabeltranjuanpablo@gmail.com",
+  email: "juanpablo0021929@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/juan-pablo-c-523a3b2a9/"
 });

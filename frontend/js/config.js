@@ -13,6 +13,6 @@ window.SITE_CONFIG = Object.freeze({
   cvUrl: "", // Ejemplo: "docs/CV-Juan-Pablo-Correa.pdf" (sube el PDF a frontend/docs/)
 
   // Datos de contacto (también están escritos en las páginas)
-  email: "correabeltranjuanpablo@gmail.com",
+  email: "juanpablo0021929@gmail.com",
   linkedinUrl: "https://www.linkedin.com/in/juan-pablo-c-523a3b2a9/"
 });
